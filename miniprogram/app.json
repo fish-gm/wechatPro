@@ -11,8 +11,8 @@
     "van-skeleton": "@vant/weapp/skeleton/index"
   },
   "pages": [
-    "pages/pay/pay",
     "pages/home/home",
+    "pages/pay/pay",
     "pages/menu/menu",
     "pages/my/my",
     "pages/comment/comment",
