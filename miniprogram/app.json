@@ -1,0 +1,66 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-rate": "@vant/weapp/rate/index",
+    "van-skeleton": "@vant/weapp/skeleton/index"
+  },
+  "pages": [
+    "pages/pay/pay",
+    "pages/home/home",
+    "pages/menu/menu",
+    "pages/my/my",
+    "pages/comment/comment",
+    "pages/order/order",
+    "pages/comeUpSoon/comeUpSoon",
+    
+    "pages/shopcart/shopcart",
+    "pages/login/login",
+    "pages/waitPay/waitPay",
+    "pages/allOrder/allOrder",
+    "pages/searchResult/searchResult"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f4ee",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#CDCDCD",
+    "selectedColor": "#FEDB5B",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_active.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "菜谱",
+        "iconPath": "./images/menu.png",
+        "selectedIconPath": "./images/menu_active.png"
+      },
+      {
+        "pagePath": "pages/shopcart/shopcart",
+        "text": "购物车",
+        "iconPath": "./images/note.png",
+        "selectedIconPath": "./images/note_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my_active.png"
+      }
+    ]
+  }
+}

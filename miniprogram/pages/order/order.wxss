@@ -1,0 +1,117 @@
+.block-list {
+  margin-top: 10rpx;
+}
+
+.block-item {
+  position: relative;
+  padding: 10rpx;
+  background-color: #f3dcb8;
+  margin-top: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  height: 140rpx;
+  background: #f8f4ee;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10rpx;
+}
+
+.img-box1 {
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.text-box {
+  position: absolute;
+  left: 130rpx;
+  width: calc(100% - 120rpx - 20rpx);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10rpx;
+
+}
+
+.name,
+.tip {
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /* 纯英文换行 */
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 这里是超出几行省略 */
+  -webkit-line-clamp: 1;
+}
+
+.tip {
+  color: #aaa;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.price {
+  color: #000;
+  font-size: 24rpx;
+  white-space: nowrap;
+}
+
+.p-num {
+  color: #e4393c;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.del-box {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.del {
+  display: inline-block;
+  width: 140rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+  margin-top: -20rpx;
+  border: 2px solid #f1bb68;
+  color: #f1bb68;
+}
+
+/* 评论 */
+.comment-box {
+  padding: 20rpx;
+
+}
+
+.star {
+  height: 100rpx;
+  line-height: 60rpx;
+}
+
+.cont-text {
+  height: 350rpx;
+}
+.cont-btn{
+  text-align: center;
+}

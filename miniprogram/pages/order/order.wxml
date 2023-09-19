@@ -1,0 +1,41 @@
+<view class="block-list" wx:if="{{alreadyPayData.length>0}}">
+  <view class='block-item' wx:for="{{alreadyPayData}}" wx:key="index" data-sliderIndex="{{index}}" data-index="{{i}}" wx:for-index="i">
+    <view class="top">
+      <view class="img-box1">
+        <image src="{{item.img}}" mode="widthFix" class="img" />
+      </view>
+      <view class="text-box">
+        <view class="text">
+          <view class="name">{{item.stdname}}</view>
+          <view class="tip">{{item.n}}</view>
+        </view>
+        <!-- <view class="price">￥<text class="p-num">{{item.price}}</text>/份</view> -->
+        <view class="price">￥<text class="p-num">{{item.price}}</text> X {{item.count}}</view>
+      </view>
+    </view>
+
+    <view class="del-box">
+      <text class="del" bind:tap="comment" data-cur-id="{{item.id}}">立即评论</text>
+    </view>
+
+  </view>
+
+  <van-popup show="{{ showComment }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+    <view class="comment-box">
+      <view class="star">
+        综合评分
+        <van-rate value="{{ starValue }}" size="{{ 25 }}" color="#ffd21e" void-icon="star" void-color="#eee" bind:change="onChangeStar" />
+      </view>
+      <view class="cont-text">
+        <input type="text" placeholder="多多描述菜品和使用感受，更受欢迎哦(200字)" value="{{comContent}}" bindinput="commentIpt" />
+      </view>
+      <view class="cont-btn">
+        <van-button type="danger" bind:click="upComment">提交评价</van-button>
+      </view>
+    </view>
+  </van-popup>
+</view>
+
+<view class="no-data" wx:else>
+  <van-empty description="您还没有待付款订单" />
+</view>

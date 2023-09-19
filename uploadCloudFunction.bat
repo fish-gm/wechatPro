@@ -1,0 +1,1 @@
+"D:\software\微信开发者工具\install\cli.bat" cloud functions deploy --e cloud1-7guvebew67fef0e5 --n quickstartFunctions --r --project "C:\Users\15767\Desktop\乐小主美食" --report_first --report

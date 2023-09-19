@@ -1,0 +1,8 @@
+<view class="order">
+  <!-- <view class="my">我的订单</view> -->
+  <view class="box">
+    <view class="item already" bind:tap="alreadyFun">已完成</view>
+    <view class="item wait" bind:tap="waitFun">待付款</view>
+    <view class="item wait" bind:tap="alreadyCom">已评价</view>
+  </view>
+</view>

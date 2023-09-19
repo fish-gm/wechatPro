@@ -1,0 +1,42 @@
+<!--pages/my/my.wxml-->
+<view class="my">
+  <view class="top">
+    <view class="msg">
+      <view class="img-box">
+        <image src="{{!curLoginInfo.imgUrl?'cloud://cloud1-7guvebew67fef0e5.636c-cloud1-7guvebew67fef0e5-1320647370/food_home_type/my.png': curLoginInfo.imgUrl}}" mode="widthFix" class="auto-img" />
+      </view>
+      <view class="text-box">
+        <!-- <view class="text-login">
+          <view class="name">哈哈哈哈哈</view>
+          <view class="detail">
+            <text>Lv5</text>
+            <text>130****0626</text>
+          </view>
+        </view> -->
+        <view class="text-nologin" bind:tap="toLogin">
+          <view class="name">{{!curLoginInfo.phone?'请先登录':curLoginInfo.phone}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="honor">
+      <view class="h-item">
+        <view class="h-num">120</view>
+        <view class="h-text">泡泡值</view>
+      </view>
+      <view class="h-item">
+        <view class="h-num">80</view>
+        <view class="h-text">泡泡积分</view>
+      </view>
+      <view class="h-item">
+        <view class="h-num">5</view>
+        <view class="h-text">勋章</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="list-box">
+    <view class="list-item" wx:for="{{listData}}" wx:key="index">
+      <text bind:tap="clickSelect" data-type="{{item.type}}">{{item.title}}</text>
+    </view>
+  </view>
+</view>

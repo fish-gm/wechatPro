@@ -1,0 +1,56 @@
+.item {
+  width: 100vw;
+  margin: 30rpx auto;
+}
+
+.img-box {
+  width: 92%;
+  height: 400rpx;
+  margin: 20rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.auto-img1 {
+  width: 100% !important;
+  display: block;
+}
+
+.text-box {
+  width: 92%;
+  margin: 20rpx auto;
+}
+
+.name-t {
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.name-n {
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+   /* 溢出隐藏 */
+   overflow: hidden;
+   /* 纯英文换行 */
+   word-break: break-all;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   /* 这里是超出几行省略 */
+   -webkit-line-clamp: 1;
+}
+.count{
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #aaa;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.collect-count{
+  margin-right: 20rpx;
+}

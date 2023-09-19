@@ -1,0 +1,103 @@
+.title {
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.tel-user {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.content-box {
+  height: calc(100vh - 200rpx);
+  overflow: auto;
+}
+
+.c-item {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  background: #f8f4ee;
+  border-bottom: 2rpx solid #f7d5a2;
+}
+
+.c-item:last-child {
+  border-bottom: 0rpx solid #f7d5a2;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 160rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.auto-img1 {
+  width: 100% !important;
+  display: block;
+}
+
+.text-box {
+  height: 90rpx;
+}
+
+.count {
+  margin-left: 20rpx;
+}
+
+.del-box{
+  flex-grow: 1;
+  text-align: right;
+}
+
+.del{
+  display: inline-block;
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+  border: 2px solid #f1bb68;
+  color: #f1bb68;
+}
+
+.to-pay {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-price {
+  margin-left: 20rpx;
+}
+
+.pay-btn {
+  margin-right: 20rpx;
+  height: 80rpx;
+  width: 160rpx;
+  border-radius: 40rpx;
+  line-height: 80rpx;
+  background: #f72637;
+  color: #fff;
+  text-align: center;
+}
+
+.ipt-box {
+  height: 80rpx;
+  /* line-height: 80rpx; */
+  text-align: center;
+  font-size: 34rpx;
+}
+.safe-password{
+  margin-top: 30rpx;
+}

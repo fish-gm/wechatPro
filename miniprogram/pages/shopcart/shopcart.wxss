@@ -1,0 +1,131 @@
+.top-btn {
+  position: fixed;
+  top: 20rpx;
+  left: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96vw;
+  background: #cecece;
+  height: 80rpx;
+  border-radius: 30rpx;
+}
+
+.total {
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+
+.del-all {
+  margin-right: 20rpx;
+  color: #aaa;
+}
+
+.content-box {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  position: relative;
+  top: 120rpx;
+  height: calc(100vh - 100rpx - 100rpx);
+  overflow: auto;
+}
+
+.c-item {
+  width: 30%;
+  margin: 10rpx 10rpx 0;
+  height: 400rpx;
+  background: #f3dfc1;
+  border-radius: 20rpx;
+}
+
+.img-box {
+  width: 90%;
+  height: 250rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin: 10rpx auto 20rpx;
+  position: relative;
+  /* 图片水平垂直居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auto-imgs {
+  height: 100% !important;
+  display: block;
+}
+
+.stdname {
+  font-size: 24rpx;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /* 纯英文换行 */
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 这里是超出几行省略 */
+  -webkit-line-clamp: 1;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.text {
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 100rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #ecebe5;
+  text-align: right;
+  border-top-left-radius: 20rpx;
+  padding-right: 10rpx;
+}
+
+.count-box {
+  margin-left: 10rpx;
+}
+
+.bottom {
+  position: relative;
+  top: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+}
+.total-price{
+  color: #f72637;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+.t-price{
+  font-size: 38rpx;
+}
+
+.to-pay{
+  background: #f72637;
+  color: #fff;
+  height: 60rpx;
+  width: 200rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+}
+
+.no-img-box{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30rpx auto;
+}
+
+.no-text{
+  text-align: center;
+  font-size: 40rpx;
+}

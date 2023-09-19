@@ -1,0 +1,130 @@
+.big-img-box{
+  width: 100%;
+  height: 400rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-msg{
+  background: #f8f4ee;
+  width: 90%;
+  height: 140rpx;
+  position: relative;
+  left: 5%;
+  top: 300rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20rpx;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.phone{
+  margin-left: 30rpx;
+}
+.num{
+  font-weight: bold;
+}
+.lab{
+  display: inline-block;
+  text-align: center;
+  background: #7d5f31;
+  line-height: 40rpx;
+  width: 80rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  color: #fff;
+}
+
+.text{
+  color: #aaa;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.r-msg{
+  margin-right: 30rpx;
+  display: flex;
+}
+.r{
+  text-align: center;
+  width: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.r-text{
+  color: #aaa;
+  font-size: 24rpx;
+}
+
+/* 到店取餐 送货到家 */
+.select{
+  position: relative;
+  top: 300rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 680rpx;
+  margin: 30rpx auto;
+}
+.s-item1{
+  font-size: 40rpx;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30rpx;
+  width: 320rpx;
+  /* padding: 60rpx; */
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  color: #fff;
+  background: #e1c5b7;
+}
+
+
+/* 子类型 */
+.type-icons{
+  position: relative;
+  top: 340rpx;
+  left: calc(50% - 340rpx);
+  width: 680rpx;
+  
+}
+.s-w{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.s-item{
+  width: 25%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20rpx;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20rpx;
+}
+.s-item.active .text{
+  color: #FEDB5B;
+}
+
+.icon{
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #e8e8e8;
+  border-radius: 30rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+
+.text{
+  margin-top: 6rpx;
+  text-align: center;
+}

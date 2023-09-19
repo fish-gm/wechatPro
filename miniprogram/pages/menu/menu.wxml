@@ -1,0 +1,53 @@
+<view class="menu" wx:if="{{isLogin}}">
+  <!-- <view class="search">
+    <view class="img-box">
+      <image src="../../images/logo.png" mode="widthFix" class="auto-img" />
+    </view>
+    <input class="input" type="text" placeholder="请输入搜索关键字" bindconfirm="onSearch" value="" bindfocus="toSearchPage" />
+    <icon type="search" class="icon-search" bind:tap="toSearchPage" />
+  </view> -->
+
+  <view class="location">
+    <view class="loca-name">
+      <view class="shop-name">乐小主餐厅</view>
+      <!-- <view class="shop-long">距你2.3km</view> -->
+    </view>
+  </view>
+  <view class="container">
+    <!-- 侧边栏 -->
+    <view class="sidebar">
+      <view wx:for="{{menuList}}" wx:key="index" data-index="{{index}}" bindtap="onClickNav" class="nav-item {{currentNavIndex == index ? 'active' : ''}}">
+        {{item.title}}
+      </view>
+    </view>
+
+    <!-- 内容 -->
+    <scroll-view class="content" scroll-y="true" bindscroll="onContentScroll" scroll-into-view="{{toView}}" scroll-with-animation="true">
+      <view wx:for="{{menuList}}" wx:key="index" id="{{item.id}}" class="one-item">
+        <view class="title">{{item.title}}</view>
+        <view class="block-list">
+          <view class='block-item' wx:for="{{item.content}}" wx:key="index" data-sliderIndex="{{index}}" data-index="{{i}}" wx:for-index="i">
+            <view class="top">
+              <view class="img-box1">
+                <image src="{{item.img}}" mode="widthFix" class="img" />
+              </view>
+              <view class="text-box">
+                <view class="text">
+                  <view class="name">{{item.stdname}}</view>
+                  <view class="tip">{{item.n}}</view>
+                </view>
+                <view class="price">￥<text class="p-num">{{item.price}}</text>/份</view>
+              </view>
+            </view>
+
+            <view class="count-box">
+              <van-stepper min="0" value="{{ item.count }}" bind:change="onChangeCount" data-id="{{item.id}}" data-slider-index="{{index}}" data-index="{{i}}" data-stdname="{{item.stdname}}"></van-stepper>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

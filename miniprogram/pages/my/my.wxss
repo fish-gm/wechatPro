@@ -1,0 +1,66 @@
+.my{
+  height: 90vh;
+}
+.top{
+  height: 40vh;
+  background: #f8f4ee;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+.msg{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 40rpx;
+}
+.img-box{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0 20rpx;
+  background: transparent;
+}
+.name{
+  font-weight: bold;
+}
+.detail{
+  font-size: 12px;
+  margin-top: 10rpx;
+  color: #999;
+}
+.detail>text:nth-child(1){
+  margin-right: 10rpx;
+}
+
+.honor{
+  display: flex;
+  height: 200rpx;
+  align-items: center;
+}
+.honor>view{
+  flex-grow: 1;
+  text-align: center;
+}
+.h-text{
+  margin-top: 10rpx;
+}
+.list-box{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top: -120rpx;
+  background: #fcf0dd;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+}
+.list-item{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #f8e087;
+}
+.list-item>text{
+  margin-left: 40rpx;
+}

@@ -1,0 +1,39 @@
+<view class="pay">
+  <view class="title">绿茶餐厅</view>
+  <view class="tel-user">用户：<text class="tel">{{curLoginInfo.phone}}</text></view>
+
+  <view class="has-data" wx:if="{{waitData.length>0}}">
+    <view class="content-box">
+      <view class="c-item" wx:for="{{waitData}}" wx:key="index">
+        <view class="img-box">
+          <image src="{{item.img}}" mode="widthFix" class="auto-img1" />
+        </view>
+        <view class="text-box">
+          <view class="stdname">{{item.stdname}}</view>
+          <view class="price-box">
+            <text class="price">￥{{item.price}}</text>
+            <text class="count">X{{item.count}}</text>
+          </view>
+        </view>
+        <view class="del-box">
+          <text class="del" data-id="{{item.id}}" bind:tap="del">删除</text>
+        </view>
+      </view>
+    </view>
+    <view class="to-pay">
+      <view class="total-price">总价：{{totalPrice}}元</view>
+      <view class="pay-btn" bind:tap="pay">付款</view>
+    </view>
+  </view>
+  <view class="no-data" wx:else>
+    <van-empty description="您还没有待付款订单" />
+  </view>
+
+
+  <van-popup show="{{ show }}" position="bottom" custom-style="height: 60%;" bind:close="onClose">
+    <!-- <view class="p-password">请输入密码</view> -->
+    <view class="ipt-box">
+      <input type="password" value="{{inputPassword}}" placeholder="请输入密码" class="safe-password" bindinput="iptPassword" />
+    </view>
+  </van-popup>
+</view>

@@ -1,0 +1,38 @@
+<view class="container">
+  <form bindsubmit="register" class="register">
+
+    <view class="form-item upload-img">
+      <view class="upload">
+        <button bindtap="chooseImage" class="img-btn" wx:if="{{!showPic}}">
+          <text>+</text>
+        </button>
+        <view class="img-box" wx:else>
+          <image class="auto-img" src="{{avatar}}" mode="widthFix" />
+        </view>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <text>手机号码</text>
+      <input type="text" name="phone" placeholder="请输入手机号码" value="{{LoginUserInfo.phone}}"/>
+    </view>
+    <!-- <view class="form-item">
+      <text>昵称</text>
+      <input type="text" name="nickname" placeholder="请输入您的昵称(选填)" />
+    </view> -->
+    <view class="form-item">
+      <text>密码</text>
+      <input type="{{isOpenPassword?'text':'password'}}" name="password" placeholder="请输入密码" value="{{LoginUserInfo.password}}"/>
+
+      <view class="pass-icon" bind:tap="showPassword">
+        <van-icon name="{{isOpenPassword?'closed-eye':'eye-o'}}" />
+      </view>
+    </view>
+
+    <view class="login-btn btn">
+      <button form-type="submit">登录</button>
+    </view>
+
+  </form>
+
+</view>

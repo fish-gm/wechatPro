@@ -1,0 +1,24 @@
+<view>
+  <view class="content-box">
+    <view class="item" wx:for="{{jjsxData}}" wx:key="index">
+      <view class="img-box">
+        <image src="{{item.img}}" mode="widthFix" class="auto-img1" />
+      </view>
+      <view class="text-box">
+        <view class="name-t">{{item.t}}</view>
+        <view class="name-n">{{item.n}}</view>
+
+        <view class="count">
+          <view class="view-count">
+            <van-icon name="eye-o" />
+            {{item.vc}}
+          </view>
+          <view class="collect-count">
+            <van-icon name="like-o" />
+            {{item.collect_count_text}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

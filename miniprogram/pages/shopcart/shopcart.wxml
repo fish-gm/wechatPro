@@ -1,0 +1,37 @@
+<view class="shopcart" wx:if="{{isLogin && shopcartData.length>0}}">
+  <view class="top-btn">
+    <view class="total">共{{totalCount}}件商品</view>
+    <view class="del-all" bind:tap="clearShopcart">
+      <van-icon name="delete-o" />
+      <text>清空购物车</text>
+    </view>
+  </view>
+
+  <view class="content-box">
+    <view class="c-item" wx:for="{{shopcartData}}" wx:key="index">
+      <view class="img-box">
+        <image src="{{item.img}}" mode="widthFix" class="auto-imgs" />
+        <view class="text">￥{{item.price}}</view>
+      </view>
+
+      <view class="stdname">{{item.stdname}}</view>
+      <view class="count-box">
+        <van-stepper min="0" value="{{ item.count }}" bind:change="changeCount" data-id="{{item.id}}"/>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="bottom">
+    <view class="total-price">￥<text class="t-price">{{totalPrice}}</text></view>
+    <view class="to-pay" bind:tap="toPay">去下单</view>
+  </view>
+
+</view>
+
+<view class="no-data" wx:else>
+  <view class="no-img-box">
+    <image src="cloud://cloud1-7guvebew67fef0e5.636c-cloud1-7guvebew67fef0e5-1320647370/food_home_type/购物车-23.svg" mode="widthFix" />
+  </view>
+  <view class="no-text">什么都没有</view>
+</view>

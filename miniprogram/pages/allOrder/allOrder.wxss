@@ -1,0 +1,26 @@
+.order {
+  padding-left: 20rpx;
+}
+
+.my {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.item {
+  margin-top: 30rpx;
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+  color: orange;
+  background: #f8f4ee;
+  border-radius: 30rpx;
+  font-size: 40rpx;
+}

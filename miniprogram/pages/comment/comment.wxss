@@ -1,0 +1,43 @@
+.box {
+  margin: 30rpx;
+}
+
+.item {
+  display: flex;
+  padding: 10rpx;
+  background: #f8f4ee;
+  margin-bottom: 30rpx;
+}
+
+.img-box {
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+}
+
+.auto-img1 {
+  width: 100% !important;
+  display: block;
+}
+
+.content {
+  width: calc(100vw - 100rpx);
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+}
+.phone{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.star{
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.com{
+  line-height: 40rpx;
+  margin-top: 40rpx;
+  background: #f7dbb2;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}

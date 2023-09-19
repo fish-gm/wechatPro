@@ -1,0 +1,60 @@
+<view class="home">
+
+  <view class="big-img-box">
+    <image src="cloud://cloud1-7guvebew67fef0e5.636c-cloud1-7guvebew67fef0e5-1320647370/food_home_type/首页图片2.jpg" mode="widthFix" class="auto-img" />
+  </view>
+
+  <view class="login-msg">
+    <view class="phone">
+      <view class="num" wx:if="{{isLogin}}">
+      {{curLoginInfo.phone}}
+        <view class="lab">专享</view>
+      </view>
+      <!-- <view class="text">登录发现更多专属福利 ></view> -->
+      <view class="fuli" wx:else>登录发现更多专属福利 ></view>
+      <view class="text">Hi~ 今天吃点什么呢？</view>
+    </view>
+    <view class="r-msg">
+      <view class="r-one r">
+        <view>0</view>
+        <view class="r-text text">积分</view>
+      </view>
+      <view class="r-two r">
+        <view>
+          <van-icon name="ecard-pay" />
+        </view>
+        <view class="r-text text">优惠卷</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="select">
+    <view class="s-item1" bind:tap="toOrder">到店取餐</view>
+    <view class="s-item1">送餐到家</view>
+  </view>
+
+  <!-- 子类型 -->
+  <view class="type-icons">
+    <swiper>
+      <block>
+        <swiper-item>
+          <view class="s-w">
+            <view class="s-item" wx:for="{{typeData}}" wx:key="index">
+              <view bind:tap="clickType" data-type="{{item.type}}">
+                <view class="icon">
+                  <image class="auto-img" src="{{item.icon}}" mode="widthFix" />
+                </view>
+                <view class="text">{{item.title}}</view>
+              </view>
+            </view>
+
+          </view>
+          <view></view>
+
+        </swiper-item>
+      </block>
+
+    </swiper>
+
+  </view>
+</view>
